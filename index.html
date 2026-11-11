@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Student Information Portal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="home">
+      <h1>Masinde Muliro University of Science and Technology</h1>
+      <h2>Student Information Portal</h2>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#registration">Student Registration</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="layout-container">
+      <!-- QUESTION TWO: HTML ELEMENTS AND TABLES -->
+    <!-- (a) About section with heading and descriptive paragraph (1 mark) -->
+    <section id="about">
+      <h2>About the Portal</h2>
+      <p>The University Student Information Portal is designed to provide students with seamless access to their academic records, course registration, fee statements, and essential university notices in one centralized platform.</p>
+    </section>
+
+    <!-- (b) Unordered list containing FOUR academic programmes (1 mark) -->
+    <section id="programmes">
+      <h2>Academic Programmes Offered</h2>
+      <ul>
+        <li>Bachelor of Science in Computer Science</li>
+        <li>Bachelor of Science in Information Technology</li>
+        <li>Bachelor of Science in Software Engineering</li>
+        <li>Bachelor of Science in Computer Security and Forensics</li>
+      </ul>
+    </section>
+
+    <!-- (c) Student information table with 5 specified columns and 3 sample records (3 marks) -->
+    <section id="student-info">
+      <h2>Student Information</h2>
+      <div class="table-container">
+        <table id="student-table" border="1">
+          <thead>
+            <tr>
+              <th>Student ID</th>
+              <th>Student Name</th>
+              <th>Registration Number</th>
+              <th>Programme</th>
+              <th>Year of Study</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>STU001</td>
+              <td>Reagan Omondi</td>
+              <td>COM/B/01-00183/2025</td>
+              <td>Computer Science</td>
+              <td>2nd Year</td>
+            </tr>
+            <tr>
+              <td>STU002</td>
+              <td>John Okello</td>
+              <td>SCF/B/01-06020/2025</td>
+              <td>Computer Security</td>
+              <td>2nd Year</td>
+            </tr>
+            <tr>
+              <td>STU003</td>
+              <td>Bildad Ochieng</td>
+              <td>COM/B/01-06916/2025</td>
+              <td>Computer Science</td>
+              <td>2nd Year</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- QUESTION THREE: HTML FORMS AND INPUT ELEMENTS -->
+    <section id="registration">
+      <h2>Student Registration</h2>
+      <form id="registration-form" action="#" method="post" novalidate>
+        <!-- (a) Student's full name using text input (1 mark) -->
+        <label for="full-name">Full Name:</label><br />
+        <input type="text" id="full-name" name="fullName" placeholder="Enter full name" required />
+        <br /><br />
+
+        <!-- (b) Registration number using appropriate input element (1 mark) -->
+        <label for="reg-number">Registration Number:</label><br />
+        <input type="text" id="reg-number" name="regNumber" placeholder="e.g. COM/B/01-00183/2025" required />
+        <br /><br />
+
+        <!-- (c) Email address using HTML5 email input type (1 mark) -->
+        <label for="email">Email Address:</label><br />
+        <input type="email" id="email" name="email" placeholder="student@example.com" required />
+        <br /><br />
+
+        <!-- (d) Gender using radio buttons (1 mark) -->
+        <label>Gender:</label><br />
+        <input type="radio" id="male" name="gender" value="Male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required />
+        <label for="female">Female</label>
+        <br /><br />
+
+        <!-- (e) Academic programme dropdown list with at least FOUR programmes (1 mark) -->
+        <label for="programme">Academic Programme:</label><br />
+        <select id="programme" name="programme" required>
+          <option value="" disabled selected>-- Select Academic Programme --</option>
+          <option value="Computer Science">Bachelor of Science in Computer Science</option>
+          <option value="Information Technology">Bachelor of Science in Information Technology</option>
+          <option value="Software Engineering">Bachelor of Science in Software Engineering</option>
+          <option value="Computer Security">Bachelor of Science in Computer Security and Forensics</option>
+        </select>
+        <br /><br />
+
+        <!-- (f) Submit button and reset button (1 mark) -->
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </form>
+
+      <!-- Container to display confirmation and submitted student details (Question 6) -->
+      <div id="confirmation-message"></div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+    </section>
+    </main>
+
+    <!-- Link external JavaScript file (Question 5) -->
+    <script src="script.js"></script>
+  </body> 
+</html>
